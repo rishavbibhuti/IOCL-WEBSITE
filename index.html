@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Oil Corporation Pvt. Ltd. - Newsroom</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Indian Oil Corporation Pvt. Ltd. - Newsroom</h1>
+    <nav>
+      <input type="text" id="searchInput" placeholder="Search news..." oninput="searchNews()" />
+      <select id="categoryFilter" onchange="filterCategory()">
+        <option value="all">All Categories</option>
+        <option value="energy">Energy</option>
+        <option value="finance">Finance</option>
+        <option value="infrastructure">Infrastructure</option>
+      </select>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="news-container"></div>
+    <button class="btn-load" onclick="loadMoreNews()">Load More News</button>
+  </div>
+  <footer>
+    &copy; 2025 Indian Oil Corporation Pvt. Ltd. All rights reserved.
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
